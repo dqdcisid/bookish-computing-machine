@@ -1,0 +1,19 @@
+void quicksort(element list[], int left, int right){
+int pivot i, j;
+if(left<right){
+  pivot=list[left].key;
+  do{
+    do i++;
+    while(list[i].key<pivot);
+    do j--;
+    while(list[j].key>pivot);
+    if(i<j)
+    SWAP(list[i], list[j])
+    }
+    while(i<j)
+    {SWAP(list[left], list[i]);
+    
+    quicksort(list, left, j-1);
+    quicksort(list, j+1, right);
+    }
+    }
